@@ -2,19 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  // justify-content: space-evenly;
+  justify-content: space-between;
   
- 
   max-width: 1600px;
-
   padding: 30px;
   gap: 30px;
-  
-  // flex-basis: calc((100% - 90px) / 3);
-  
 }
 
-  
+// Позиціонування останнього елемента (не посередині, а там, де закінчується список):
+.gallery::after {
+  content: "";
+  flex: auto;
+}
 
 .photo-card {
   border: 1px solid rgba(111, 106, 106, 0.2);
@@ -22,18 +21,15 @@
 }
 
 .info {
-  padding: 10px 10px;
-
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
 
-  
+  padding: 10px 10px;
 }
 
 .info-item {
-  // max-width: 52px;
   inline-size: min-content;
   font-size: 11px;
 }
