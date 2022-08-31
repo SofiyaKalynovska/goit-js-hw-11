@@ -1,0 +1,39 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // justify-content: space-evenly;
+  
+ 
+  max-width: 1600px;
+
+  padding: 30px;
+  gap: 30px;
+  
+  // flex-basis: calc((100% - 90px) / 3);
+  
+}
+
+  
+
+.photo-card {
+  border: 1px solid rgba(111, 106, 106, 0.2);
+  border-bottom: 4px solid rgba(111, 106, 106, 0.2);
+}
+
+.info {
+  padding: 10px 10px;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+
+.info-item {
+  // max-width: 52px;
+  inline-size: min-content;
+  font-size: 11px;
+}
