@@ -10,9 +10,13 @@
 }
 
 // Позиціонування останнього елемента (не посередині, а там, де закінчується список):
-.gallery::after {
-  content: "";
-  flex: auto;
+// .gallery::after {
+//   content: "";
+//   flex: auto;
+// }
+.gallery:last-child {
+  margin-right: auto;
+  
 }
 
 .photo-card {
